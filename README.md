@@ -54,3 +54,12 @@ sudo firewall-cmd --reload
 ```
 wget https://get.symfony.com/cli/installer -O - | bash
 ```
+
+## start project
+```
+symfony new --version=3.4 my_project_name_3.4 --full
+
+symfony new  my_project_name --full
+
+
+```
