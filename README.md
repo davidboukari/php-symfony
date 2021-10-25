@@ -74,7 +74,7 @@ symfony new --version=3.4 my_project_name_3.4 --full
 symfony new  my_project_name --full
 ```
 
-* startt symfony
+* start symfony
 ``` 
 symfony serve --port=9000
 ```
