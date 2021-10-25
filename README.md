@@ -27,6 +27,17 @@ mysql_secure_installation
 
 * php
 ```
+sudo yum install epel-release
+
+$ sudo dnf module list php
+Dernière vérification de l’expiration des métadonnées effectuée il y a 0:05:57 le lun. 25 oct. 2021 20:56:29 CEST.
+CentOS Linux 8 - AppStream
+Name                                             Stream                                              Profiles                                                               Summary
+php                                              7.2 [d]                                             common [d], devel, minimal                                             PHP scripting language
+php                                              7.3                                                 common [d], devel, minimal                                             PHP scripting language
+php                                              7.4 [e]                                             common [d], devel, minimal                                             PHP scripting language
+
+
 sudo yum install -y php php-mysqlnd php-json 
 sudo yum install -y zip unzip php-zip
 
