@@ -27,7 +27,8 @@ mysql_secure_installation
 
 * php
 ```
-sudo yum install -y php php-mysqlnd php-json
+sudo yum install -y php php-mysqlnd php-json 
+sudo yum install -y zip unzip php-zip
 
 php --ini
 Configuration File (php.ini) Path: /etc
