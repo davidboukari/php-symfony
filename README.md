@@ -77,5 +77,6 @@ symfony new  my_project_name --full
 
 * start symfony
 ``` 
-symfony serve --port=9000
+symfony serve
+symfony serve --port=8000
 ```
