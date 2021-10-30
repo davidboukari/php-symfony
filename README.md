@@ -93,24 +93,32 @@ symfony console make:user
 
 ```
 
-### Create DB
+* Create DB
 ```
 symfony  console doctrine:database:create
 Created database `laboutiquefrancaise` for connection named default
 
 ```
 
-### Create migration files
+* Create migration files
 ```
-symfony console make:migration
-
-
-           
+symfony console make:migratio       
   Success! 
-           
-
  Next: Review the new migration "migrations/Version20211030095706.php"
  Then: Run the migration with php bin/console doctrine:migrations:migrate
  See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+```
+
+
+* Migrate to DB
+```
+symfony console doctrine:migration:migrate
+
+ WARNING! You are about to execute a migration in database "laboutiquefrancaise" that could result in schema changes and data loss. Are you sure you wish to continue? (yes/no) [yes]:
+ >    
+
+[notice] Migrating up to DoctrineMigrations\Version20211030095706
+[notice] finished in 99ms, used 10M memory, 1 migrations executed, 1 sql queries
 
 ```
