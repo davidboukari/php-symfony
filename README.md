@@ -99,3 +99,18 @@ symfony  console doctrine:database:create
 Created database `laboutiquefrancaise` for connection named default
 
 ```
+
+### Create migration files
+```
+symfony console make:migration
+
+
+           
+  Success! 
+           
+
+ Next: Review the new migration "migrations/Version20211030095706.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+```
