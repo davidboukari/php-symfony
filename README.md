@@ -80,3 +80,15 @@ symfony new  my_project_name --full
 symfony serve
 symfony serve --port=8000
 ```
+
+
+## User
+```
+symfony console make:user
+
+=> Security  : Update
+=> src\Repository : Get, Search (quering)
+=> src\Entity: Mapping BDD User 
+
+
+```
