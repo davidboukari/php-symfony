@@ -92,3 +92,10 @@ symfony console make:user
 
 
 ```
+
+### Create DB
+```
+symfony  console doctrine:database:create
+Created database `laboutiquefrancaise` for connection named default
+
+```
