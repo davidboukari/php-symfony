@@ -140,6 +140,13 @@ symfony console make:migration
 symfony console doctrine:migration:migrate
 ```
 
+## Easyadmin
+
+```
+# Map an Entity to Easyadmin
+symfony console make:admin:crud
+```
+
 ## Debug router
 ```
  symfony console debug:router
