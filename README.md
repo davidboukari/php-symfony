@@ -123,7 +123,22 @@ symfony console doctrine:migration:migrate
 
 ```
 
+## Set up DB connexion
+```
+.env
+```
 
+## Entity & Migration
+```
+# Create Entity object for the BDD
+symfony console make:entity
+
+# Create migration files
+symfony console make:migration
+
+# Do the migration with the DB
+symfony console doctrine:migration:migrate
+```
 
 ## Debug router
 ```
