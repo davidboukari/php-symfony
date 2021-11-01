@@ -141,7 +141,8 @@ symfony console doctrine:migration:migrate
 ```
 
 ## Easyadmin
-
+* Icons: https://fontawesome.com/
+* Ex: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=list
 ```
 # Map an Entity to Easyadmin
 symfony console make:admin:crud
