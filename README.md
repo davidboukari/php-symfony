@@ -170,3 +170,27 @@ symfony console make:admin:crud
   _preview_error             ANY      ANY      ANY    /_error/{code}.{_format}           
  -------------------------- -------- -------- ------ ----------------------------------- 
 ```
+
+## List service which we can inject dependencies
+```
+symfony console debug:autowiring
+
+Autowirable Types
+=================
+
+ The following classes & interfaces can be used as type-hints when autowiring:
+ 
+ App\Kernel (kernel)
+ 
+ Interface for annotation readers.
+ Doctrine\Common\Annotations\Reader (annotations.cached_reader)
+ 
+ Doctrine\Common\Persistence\ManagerRegistry (doctrine)
+ 
+ A database abstraction-level connection that implements features like events, transaction isolation levels, configuration, emulated transaction nesting, lazy connecting and more.
+ Doctrine\DBAL\Connection (doctrine.dbal.default_connection)
+ Doctrine\DBAL\Connection $defaultConnection (doctrine.dbal.default_connection)
+ 
+ Connection interface. Driver connections must implement this interface.
+ Doctrine\DBAL\Driver\Connection (doctrine.dbal.default_co
+```
