@@ -194,3 +194,26 @@ Autowirable Types
  Connection interface. Driver connections must implement this interface.
  Doctrine\DBAL\Driver\Connection (doctrine.dbal.default_co
 ```
+
+### a specific service type
+```
+ymfony console debug:autowiring session
+
+Autowirable Types
+=================
+
+ The following classes & interfaces can be used as type-hints when autowiring:
+ (only showing classes/interfaces matching session)
+ 
+ SessionHandlerInterface (session.handler.native_file)
+ 
+ FlashBagInterface.
+ Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface (session.flash_bag)
+ 
+ Interface for the session.
+ Symfony\Component\HttpFoundation\Session\SessionInterface (.session.do-not-use) - deprecated
+ 
+ SessionAuthenticationStrategyInterface.
+ Symfony\Component\Security\Http\Session\SessionAuthenticationStrategyInterface (security.authentication.session_strategy)
+
+```
