@@ -266,7 +266,9 @@ description (text)
 price (float)
 category (relation, Category, ManyToOne )
 
+symfony console make:migration
 
+symfony console doctrine:migration:migrate
 
 
 `#### slug
