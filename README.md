@@ -250,4 +250,10 @@ symfony console doctrine:migration:migrate
 [notice] Migrating up to DoctrineMigrations\Version20211203172513
 [notice] finished in 267.5ms, used 10M memory, 1 migrations executed, 1 sql queries
 
+####  
+symfony console make:admin:crud
+
+Search icons:
+* https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=list
+
 ```
