@@ -257,3 +257,18 @@ Search icons:
 * https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=list
 
 ```
+
+## Product
+```
+symfony console make:entity
+name, slug, illustration, subtitle (string 255)
+description (text)
+price (float)
+category (relation, Category, ManyToOne )
+
+
+
+
+`#### slug
+* A slug: Ex: écharpe rouge française => echarpe-route-francaise
+```
