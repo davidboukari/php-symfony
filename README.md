@@ -227,3 +227,27 @@ symfony console make:admin:dashboard
 
 symfony console make:admin:crud
 ```
+
+### Create entity Category
+```
+#### Create Entity Category
+symfony console make:entity
+Category
+
+#### Create a migration file
+symfony console make:migration           
+  Success! 
+ Next: Review the new migration "migrations/Version20211203172513.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+#### Use doctrine to migrate to the DB
+symfony console doctrine:migration:migrate
+
+ WARNING! You are about to execute a migration in database "laboutiquefrancaise" that could result in schema changes and data loss. Are you sure you wish to continue? (yes/no) [yes]:
+ > yes
+
+[notice] Migrating up to DoctrineMigrations\Version20211203172513
+[notice] finished in 267.5ms, used 10M memory, 1 migrations executed, 1 sql queries
+
+```
