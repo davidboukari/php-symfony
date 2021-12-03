@@ -222,4 +222,8 @@ Autowirable Types
 * https://symfony.com/bundles/EasyAdminBundle/current/index.html
 ```
 composer require easycorp/easyadmin-bundle
+
+symfony console make:admin:dashboard
+
+symfony console make:admin:crud
 ```
