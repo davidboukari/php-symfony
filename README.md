@@ -217,3 +217,9 @@ Autowirable Types
  Symfony\Component\Security\Http\Session\SessionAuthenticationStrategyInterface (security.authentication.session_strategy)
 
 ```
+
+## Easyadmin
+* https://symfony.com/bundles/EasyAdminBundle/current/index.html
+```
+composer require easycorp/easyadmin-bundle
+```
