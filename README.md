@@ -258,19 +258,27 @@ Search icons:
 
 ```
 
-## Product
+## Product administration
 ```
-symfony console make:entity
+# Create Entity Product for the db mapping
+$ symfony console make:entity
 name, slug, illustration, subtitle (string 255)
 description (text)
 price (float)
 category (relation, Category, ManyToOne )
 
-symfony console make:migration
+# Create a migration file (sql file to update the DB)
+$ symfony console make:migration
 
-symfony console doctrine:migration:migrate
+# Migrate (update) the DB
+$ symfony console doctrine:migration:migrate
+
+# Create the admin page
+$ symfony console make:admin:crud
 
 
 `#### slug
 * A slug: Ex: écharpe rouge française => echarpe-route-francaise
+
+
 ```
