@@ -317,4 +317,6 @@ Address
 * phone: string 255
 
 symfony console make:migration
+
+symfony console doctrine:migrations:migrate
 ```
