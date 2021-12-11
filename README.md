@@ -300,6 +300,7 @@ symfony console make:controller
 
 
 ## Address
+* Entity
 ```
 symfony console make:entity
 Address
@@ -319,4 +320,9 @@ Address
 symfony console make:migration
 
 symfony console doctrine:migrations:migrate
+
 ```
+* Code Controller
+```
+symfony console make:Controller
+AccountAddress
