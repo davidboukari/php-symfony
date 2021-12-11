@@ -303,8 +303,8 @@ symfony console make:controller
 ```
 symfony console make:entity
 Address
-* user: Relation ManyToOne `notnull
-* addresses nosupressorphan
+* user: Relation ManyToOne `notnull  new field insise User: addresses nosupressorphan
+* 
 
 * name string 255 notnull
 * firstname string 255 notnull
