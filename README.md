@@ -326,3 +326,7 @@ symfony console doctrine:migrations:migrate
 ```
 symfony console make:Controller
 AccountAddress
+
+symfony console make:form
+Address
+```
