@@ -258,7 +258,7 @@ Search icons:
 
 ```
 
-## Product administration
+## Product Administration (Easyadmin)
 ```
 # Create Entity Product for the db mapping
 $ symfony console make:entity
@@ -281,4 +281,40 @@ $ symfony console make:admin:crud
 * A slug: Ex: écharpe rouge française => echarpe-route-francaise
 
 
+```
+
+## Product (View controller)
+```
+symfony console make:controller
+
+```
+
+
+## Cart
+```
+symfony console make:controller
+
+
+```
+* Table bootstrap: https://getbootstrap.com/docs/5.1/content/tables/
+
+
+## Address
+```
+symfony console make:entity
+Address
+* user: Relation ManyToOne `notnull
+* addresses nosupressorphan
+
+* name string 255 notnull
+* firstname string 255 notnull
+* lastname string 255 notnull
+* company string 255 null
+* address string 255 notnull
+* postal: string 255 notnull
+* city string 255 
+* country: string 255
+* phone: string 255
+
+symfony console make:migration
 ```
