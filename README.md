@@ -330,3 +330,32 @@ AccountAddress
 symfony console make:form
 Address
 ```
+* Bootstrap card for address: https://getbootstrap.com/docs/4.0/components/card/
+```
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+```
+
+## Order
+* Carrer
+```
+# entity carrer
+Symfony console make:Career
+name string 255 notnull
+description text notnull
+price float notnull
+
+symfony console migration:migrate
+
+symfony console doctrine:migrations:migrate
+
+# easyadmin carrer
+symfony console make:admin:crud
+1 
+```
