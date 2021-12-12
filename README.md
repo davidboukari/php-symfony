@@ -346,7 +346,8 @@ Address
 * Carrer
 ```
 # entity carrer
-Symfony console make:Career
+Symfony console make:Controller
+Career
 name string 255 notnull
 description text notnull
 price float notnull
