@@ -351,13 +351,38 @@ Carrier
 name string 255 notnull
 description text notnull
 price float notnull
-
+: 
 symfony console migration:migrate
 
 symfony console doctrine:migrations:migrate
 
 # easyadmin Carrier
-
-symfony console make:admin:crud
+$ symfony console make:admin:crud
 1 
+```
+* Order
+```
+$ symfony console make:entity
+Order
+user: relation User manytoOne nodotsuppressorphan
+createAt: datetime
+carrierName: string
+carrierPrice: float
+delivery: string 
+```
+
+* OrderDetails
+```
+$ symfony console make:entity
+OrderDetails
+myOrder: relation Order manyToOne noorphan
+product: string 255
+quantity: interger
+price: float
+total: float
+
+$ symfony console make:migration
+$ symfony console doctrine:migration:migrate
+```
+
 ```
