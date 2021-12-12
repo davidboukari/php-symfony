@@ -342,12 +342,12 @@ Address
 </div>
 ```
 
-## Order
-* Carrer
+## Order 
+* Carrier (Transporteur)
 ```
 # entity carrer
-Symfony console make:Controller
-Career
+Symfony console make:entity
+Carrier
 name string 255 notnull
 description text notnull
 price float notnull
@@ -356,7 +356,8 @@ symfony console migration:migrate
 
 symfony console doctrine:migrations:migrate
 
-# easyadmin carrer
+# easyadmin Carrier
+
 symfony console make:admin:crud
 1 
 ```
