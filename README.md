@@ -384,5 +384,16 @@ total: float
 $ symfony console make:migration
 $ symfony console doctrine:migration:migrate
 ```
+* The form Order is not linked to an Entity juste press ENTER
+```
+symfony console make:form
+Order: The form Order is not linked to an Entity juste press ENTER
+```
+* Order isPaid
+```
+symfony console make:entity
+Order
+isPaid: Boolean notnull
 
 ```
+
