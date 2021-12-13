@@ -38,9 +38,11 @@ php                                              7.2 [d]                        
 php                                              7.3                                                 common [d], devel, minimal                                             PHP scripting language
 php                                              7.4 [e]                                             common [d], devel, minimal                                             PHP scripting language
 
-
+## Install extension
 sudo yum install -y php php-mysqlnd php-json 
 sudo yum install -y zip unzip php-zip
+### Datetime
+sudo yum install php-intl
 
 php --ini
 Configuration File (php.ini) Path: /etc
