@@ -404,3 +404,8 @@ $ symfony console make:migration
 $ symfony console doctrine:migration:migrate
 ```
 
+## Mapping Order OrderDetails
+```
+symfony console make:admin:crud
+3(Order)
+```
