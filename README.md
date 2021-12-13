@@ -81,6 +81,11 @@ symfony serve
 symfony serve --port=8000
 ```
 
+## twig
+* debug
+```
+{{ dump(carrier) }}
+```
 
 ## User
 ```
