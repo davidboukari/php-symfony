@@ -411,3 +411,7 @@ $ symfony console doctrine:migration:migrate
 symfony console make:admin:crud
 3(Order)
 ```
+
+
+## Paiment
+* https://stripe.com/fr/payments
