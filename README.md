@@ -415,3 +415,9 @@ symfony console make:admin:crud
 
 ## Paiment
 * https://stripe.com/fr/payments
+
+* Update order by using reference
+```
+symfony console make:entity
+reference string 255 not null
+```
