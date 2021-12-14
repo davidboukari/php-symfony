@@ -420,4 +420,7 @@ symfony console make:admin:crud
 ```
 symfony console make:entity
 reference string 255 not null
+
+symfony console make:migration
+symfony console doctrine:migration:migrate
 ```
