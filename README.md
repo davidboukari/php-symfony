@@ -147,6 +147,12 @@ symfony console make:migration
 symfony console doctrine:migration:migrate
 ```
 
+* Rollback doctrine migration
+```
+ symfony console doctrine:migrations:migrate prev
+ 
+
+
 ## Easyadmin
 * Icons: https://fontawesome.com/
 * Ex: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=list
@@ -423,4 +429,12 @@ reference string 255 not null
 
 symfony console make:migration
 symfony console doctrine:migration:migrate
+
+symfony console make:entity
+Order
+stripeSessionId string 255 nullable
+symfony console make:migration
+symfony console doctrine:migration:migrate
+
+
 ```
