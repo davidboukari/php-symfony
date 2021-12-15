@@ -445,4 +445,10 @@ symfony console make:migration
 symfony console doctrine:migration:migrate
 
 
+$ symfony console make:Controller
+OrderSuccessController
+
+$ symfony console make:Controller
+OrderCancelController
+
 ```
