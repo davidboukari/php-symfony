@@ -452,3 +452,23 @@ $ symfony console make:Controller
 OrderCancelController
 
 ```
+
+## Sort in OrderRepository
+```
+   /*
+     * findSuccessOrders()
+     * Permet d'afficher les commandes dans l'espace membre
+     */
+    public function findSuccessOrders(){
+        // o is alias of order
+        return $this->createQueryBuilder('o')
+            ->andWhere('o.isPaid = 1')
+            ->orderBy('o.id', 'DESC')
+            ->getQuery()
+            ->getResult();
+    }
+```
+
+
+
+
