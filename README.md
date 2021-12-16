@@ -429,6 +429,7 @@ symfony console make:admin:crud
 
 ## Paiment
 * https://stripe.com/fr/payments
+* Test cards numbers: https://stripe.com/docs/testing
 
 * Update order by using reference
 ```
