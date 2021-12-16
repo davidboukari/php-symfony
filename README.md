@@ -473,4 +473,5 @@ OrderCancelController
 
 ## Mailjet
 * https://app.mailjet.com
+* developer page: https://app.mailjet.com/auth/get_started/developer
 
