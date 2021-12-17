@@ -474,4 +474,15 @@ OrderCancelController
 ## Mailjet
 * https://app.mailjet.com
 * developer page: https://app.mailjet.com/auth/get_started/developer
+* https://dev.mailjet.com/email/guides/?_ga=2.251615686.1578905070.1639659281-457607442.1639659281#getting-started
+* https://github.com/mailjet/mailjet-apiv3-php
+
+```
+composer require mailjet/mailjet-apiv3-php
+
+```
+
+
+## Cookie consent
+* https://github.com/ConnectHolland/cookie-consent-bundle
 
