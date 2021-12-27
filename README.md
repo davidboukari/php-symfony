@@ -10,13 +10,16 @@
 * https://getcomposer.org/
 * https://twig.symfony.com/  (template)  
  
-Link
+## Links
 * lorem ipsum text: https://www.faux-texte.com/lorem-ipsum-1.htm
 * stripe (paiment): https://stripe.com/docs/testing
 * stripe tests cards: https://stripe.com/docs/testing
 * mailjet: https://app.mailjet.com/account/sender 
 * mailjet: https://github.com/mailjet/mailjet-apiv3-php
-* icons: https://www.flaticon.com/search?word=trash
+* 
+### icons: 
+* https://www.iconfinder.com/search?q=minus
+* https://www.flaticon.com/search?word=trash
 * https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=trash
 ```
 # EasyAdmin: To search icon go to fontawesome: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=tag
