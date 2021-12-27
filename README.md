@@ -8,7 +8,25 @@
 
 * https://symfony.com/
 * https://getcomposer.org/
-* https://twig.symfony.com/  (template)
+* https://twig.symfony.com/  (template)  
+ 
+Link
+* lorem ipsum text: https://www.faux-texte.com/lorem-ipsum-1.htm
+* stripe (paiment): https://stripe.com/docs/testing
+* stripe tests cards: https://stripe.com/docs/testing
+* mailjet: https://app.mailjet.com/account/sender 
+* mailjet: https://github.com/mailjet/mailjet-apiv3-php
+* icons: https://www.flaticon.com/search?word=trash
+* https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=trash
+```
+# EasyAdmin: To search icon go to fontawesome: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=tag
+        yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
+        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user', User::class);
+        yield MenuItem::linkToCrud('Commandes', 'fas fa-shopping-cart', Order::class);
+        yield MenuItem::linkToCrud('Categories', 'fas fa-list', Category::class);
+        yield MenuItem::linkToCrud('Produits', 'fas fa-tag', Product::class);
+        yield MenuItem::linkToCrud('Carrier', 'fas fa-truck', Carrier::class);
+```
 
 ## Installation Centos 8
 https://www.cloudbooklet.com/how-to-install-lamp-stack-apache-mysql-mariadb-php-on-centos-8/
