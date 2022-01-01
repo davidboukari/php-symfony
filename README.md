@@ -300,6 +300,34 @@ symfony console doctrine:migration:migrate
 [notice] finished in 267.5ms, used 10M memory, 1 migrations executed, 1 sql queries
 
 
+* Upgrade easy admin
+```
+[dboukari@localhost laboutiquefrancaise]$ composer update easycorp/easyadmin-bundle
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 0 installs, 1 update, 0 removals
+  - Upgrading easycorp/easyadmin-bundle (v3.5.14 => v3.5.17)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 1 update, 0 removals
+  - Downloading easycorp/easyadmin-bundle (v3.5.17)
+  - Upgrading easycorp/easyadmin-bundle (v3.5.14 => v3.5.17): Extracting archive
+Generating optimized autoload files
+composer/package-versions-deprecated: Generating version class...
+composer/package-versions-deprecated: ...done generating version class
+116 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+
+What about running composer global require symfony/thanks && composer thanks now?
+This will spread some ??  by sending a ??  to the GitHub repositories of your fellow package maintainers.
+
+Run composer recipes at any time to see the status of your Symfony recipes.
+
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+```
+
+
 ### Doctrine remove a field
 * Remove the field declaration in the entity and it getter and setter
 * symfony console doctrine:migrations:list
