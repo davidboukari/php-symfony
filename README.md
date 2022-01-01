@@ -503,6 +503,9 @@ composer require mailjet/mailjet-apiv3-php
 
 ```
 
+## Easyadmin
+* Actions: https://symfony.com/bundles/EasyAdminBundle/3.x/actions.html
+
 
 ## Cookie consent
 * https://github.com/ConnectHolland/cookie-consent-bundle
