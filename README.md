@@ -205,6 +205,21 @@ symfony console make:admin:crud
  -------------------------- -------- -------- ------ ----------------------------------- 
 ```
 
+```
+symfony console debug:router --show-controllers
+ -------------------------- -------- -------- ------ ------------------------------------- --------------------------------------------------------- 
+  Name                       Method   Scheme   Host   Path                                  Controller                                               
+ -------------------------- -------- -------- ------ ------------------------------------- --------------------------------------------------------- 
+  _wdt                       ANY      ANY      ANY    /_wdt/{token}                         web_profiler.controller.profiler::toolbarAction()        
+  _profiler_home             ANY      ANY      ANY    /_profiler/                           web_profiler.controller.profiler::homeAction()           
+  ... 
+  products                   ANY      ANY      ANY    /nos-produits                         App\Controller\ProductController::index()                
+  product                    ANY      ANY      ANY    /produit/{slug}                       App\Controller\ProductController::show()                 
+  register                   ANY      ANY      ANY    /inscription                          App\Controller\RegisterController::index()               
+ ...
+  _preview_error             ANY      ANY      ANY    /_error/{code}.{_format}              error_controller::preview() 
+```
+
 ## List service which we can inject dependencies
 ```
 symfony console debug:autowiring
