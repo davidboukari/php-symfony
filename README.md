@@ -50,6 +50,38 @@ sudo yum install mariadb-server mariadb -y
 sudo systemctl enable mariadb --now
 mysql_secure_installation
 ```
+To connect to the DB
+```
+mysql -u root -p -h 127.0.0.1
+show databases
+    -> ;
++---------------------+
+| Database            |
++---------------------+
+| information_schema  |
+| laboutiquefrancaise |
+| mysql               |
+| performance_schema  |
+
+
+MariaDB [laboutiquefrancaise]> show tables;
++-------------------------------+
+| Tables_in_laboutiquefrancaise |
++-------------------------------+
+| address                       |
+| carrier                       |
+| category                      |
+| doctrine_migration_versions   |
+| header                        |
+| order                         |
+| order_details                 |
+| product                       |
+| user                          |
++-------------------------------+
+9 rows in set (0.001 sec)
+
+```
+
 
 * php
 ```
