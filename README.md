@@ -589,3 +589,5 @@ composer require mailjet/mailjet-apiv3-php
 ## Cookie consent
 * https://github.com/ConnectHolland/cookie-consent-bundle
 
+## Password reset
+* https://symfony.com/doc/4.4/security/reset_password.html
