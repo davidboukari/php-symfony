@@ -591,3 +591,9 @@ composer require mailjet/mailjet-apiv3-php
 
 ## Password reset
 * https://symfony.com/doc/4.4/security/reset_password.html
+```
+composer require symfonycasts/reset-password-bundle
+    .....
+
+symfony bin/console make:reset-password
+```
