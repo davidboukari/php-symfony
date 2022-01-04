@@ -597,3 +597,12 @@ composer require symfonycasts/reset-password-bundle
 
 symfony bin/console make:reset-password
 ```
+
+
+
+# Env variables
+```
+symfony console debug:container --env-vars
+symfony console about
+
+```
