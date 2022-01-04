@@ -25,6 +25,9 @@
 ### Images
 * https://www.pexels.com/fr-fr/
 
+### color panel
+* https://flatuicolors.com/
+
 ```
 # EasyAdmin: To search icon go to fontawesome: https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=tag
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
