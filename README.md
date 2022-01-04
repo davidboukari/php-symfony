@@ -632,6 +632,9 @@ $ symfony console make:form
 Contact
 (empty to no link it to an entity)
 
-
-
 ```
+
+
+### Deployment
+<img width="1551" alt="image" src="https://user-images.githubusercontent.com/32338685/148135287-f3b5a507-0df7-4df6-a4fe-03026dda491f.png">
+
