@@ -638,3 +638,14 @@ Contact
 ### Deployment
 <img width="1551" alt="image" src="https://user-images.githubusercontent.com/32338685/148135287-f3b5a507-0df7-4df6-a4fe-03026dda491f.png">
 
+
+https://symfony.com/doc/current/deployment.html
+
+```
+1/ .env   
+set env=prod
+set DATABASE_URL
+2/ after each update: symfony console cache:clear
+
+
+```
