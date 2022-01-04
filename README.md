@@ -603,6 +603,9 @@ symfony bin/console make:reset-password
 # Env variables
 ```
 symfony console debug:container --env-vars
+
 symfony console about
 
+# Ex: update .env and print $_
+print_r($_SERVER)
 ```
