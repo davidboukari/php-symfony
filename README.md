@@ -600,7 +600,7 @@ symfony bin/console make:reset-password
 
 
 
-# Env variables
+## Env variables
 ```
 symfony console debug:container --env-vars
 
@@ -608,4 +608,27 @@ symfony console about
 
 # Ex: update .env and print $_
 print_r($_SERVER)
+```
+
+## Manage Errors pages
+```
+composer require symfony/twig-pack
+mkdir -p templates/bundles/TwigBundle/Exception
+touch templates/bundles/TwigBundle/Exception/error.html.twig
+
+symfony console cache:clear
+```
+
+
+## Contact page
+```
+$ symfony console make:Controller
+Contact
+
+$ symfony console make:form
+Contact
+(empty to no link it to an entity)
+
+
+
 ```
