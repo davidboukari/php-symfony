@@ -649,3 +649,17 @@ set DATABASE_URL
 
 
 ```
+
+
+## Deploy
+```
+composer require symfony/requirements-checker
+composer install --no-dev --optimize-autoloader
+
+APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
+```
+
+
+
+
+
