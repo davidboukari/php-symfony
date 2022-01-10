@@ -655,12 +655,18 @@ set DATABASE_URL
 ```
 composer require symfony/requirements-checker
 composer install --no-dev --optimize-autoloader
-composer require symfony/apache-pack
+
 
 
 APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
+```
 
-cat  /etc/httpd/conf.d/laboutiquefrancaise.conf 
+* Deploy config apache2
+```
+https://symfony.com/doc/current/setup/web_server_configuration.html
+$ composer require symfony/apache-pack
+
+$ cat  /etc/httpd/conf.d/laboutiquefrancaise.conf 
 Listen *:8090
 <VirtualHost *:8090>
     ServerName laboutiquefrancaise.tld
