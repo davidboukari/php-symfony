@@ -659,6 +659,30 @@ composer require symfony/apache-pack
 
 
 APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
+
+cat  /etc/httpd/conf.d/laboutiquefrancaise.conf 
+Listen *:8090
+<VirtualHost *:8090>
+    ServerName laboutiquefrancaise.tld
+    ServerAlias www.laboutiquefrancaise.tld
+
+    DocumentRoot /var/www/html/symfony/laboutiquefrancaise/public/
+    <Directory /var/www/html/symfony/laboutiquefrancaise/public/>
+        AllowOverride All
+        Order Allow,Deny
+        Allow from All
+    </Directory>
+
+    # uncomment the following lines if you install assets as symlinks
+    # or run into problems when compiling LESS/Sass/CoffeeScript assets
+    # <Directory /var/www/project>
+    #     Options FollowSymlinks
+    # </Directory>
+
+    ErrorLog /var/log/httpd/project_error.log
+    CustomLog /var/log/httpd/project_access.log combined
+</VirtualHost>
+
 ```
 
 
