@@ -655,6 +655,8 @@ set DATABASE_URL
 ```
 composer require symfony/requirements-checker
 composer install --no-dev --optimize-autoloader
+composer require symfony/apache-pack
+
 
 APP_ENV=prod APP_DEBUG=0 php bin/console cache:clear
 ```
