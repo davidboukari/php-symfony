@@ -691,7 +691,73 @@ Listen *:8090
 
 ```
 
+## Deploy & Install in Docker
+* Build App Image
+```
+# Buid image
+docker build . -t php-symfony-laboutiquefrancaise:v1.0.0 
+
+# Run the container
+docker stop  php-symfony-laboutiquefrancaise; docker rm  php-symfony-laboutiquefrancaise ;sudo docker run -it --entrypoint /bin/bash  --mount type=bind,source=$PWD/.env,target=/var/www/html/.env  -p 10999:8080 --name php-symfony-laboutiquefrancaise php-symfony-laboutiquefrancaise:v1.0.0
 
 
+-----------------------------
+FROM newdeveloper/apache-php-composer:latest
+EXPOSE 80
+EXPOSE 8080
+
+WORKDIR /var/www/html
+ENV PROJECT_DIR=/var/www/html
+ENV GIT_PROJECT_NAME=php-symfony-laboutiquefrancaise
+
+# symfony
+RUN apt-get install -y  wget git
+
+RUN wget https://get.symfony.com/cli/installer -O - | bash
+RUN cp /root/.symfony/bin/symfony  /usr/local/bin
+
+# Configure apache2
+ADD laboutiquefrancaise.conf   /etc/apache2/sites-available/
+RUN echo "Listen 8080" >> /etc/apache2/ports.conf
+
+# Add apache module
+RUN apt-get install -y php-intl
+#RUN sed -i "s/;extension=intl/extension=intl/g" /etc/php/7.4/apache2/php.ini
+#RUN sed -i "s/;extension=intl/extension=intl/g" /etc/php/7.4/cli/php.ini
+
+COPY $GIT_PROJECT_NAME $PROJECT_DIR
+ADD env ${PROJECT_DIR}/.env
+ADD htaccess ${PROJECT_DIR}/public/.htaccess
+#RUN touch ${PROJECT_DIR}/.env
+RUN chown -R www-data.www-data $PROJECT_DIR
+
+RUN cd $PROJECT_DIR  && composer require symfony/apache-pack -n
+
+RUN a2ensite laboutiquefrancaise
+
+#RUN service apache2 reload
+#ENTRYPOINT ["/bin/bash", "-c", "composer install"]
+#CMD ["/usr/bin/service", "apache2", "restart"]
+
+```
+
+* Build the bdd
+```
+# BDD laboutiquefrancaise mysql
+
+## mariadb
+docker pull mariadb:latest
+
+docker stop docker  mariadb-laboutiquefrancaise;docker rm mariadb-laboutiquefrancaise;   docker run -it --name mariadb-laboutiquefrancaise --env MARIADB_USER=root --env MARIADB_PASSWORD=linuxroot --env MARIADB_ROOT_PASSWORD=linuxroot  mariadb:latest  /bin/bash
 
 
+## mysql
+docker pull mysql:8.0
+
+docker stop mysql-laboutiquefrancaise;docker rm mysql-laboutiquefrancaise; docker run -d --name mysql-laboutiquefrancaise -e MYSQL_ROOT_PASSWORD=linuxroot -p 13306:3306 -v $PWD/var/lib/mysql:/var/lib/mysql mysql:8.0; docker logs -f mysql-laboutiquefrancaise
+
+docker cp db.sql mysql-laboutiquefrancaise:/
+docker exec -it mysql-laboutiquefrancaise /bin/bash 
+mysql -u root -p
+source ./db.sql
+```
