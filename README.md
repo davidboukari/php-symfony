@@ -113,6 +113,9 @@ Additional .ini files parsed:      /etc/php.d/20-bz2.ini,
 /etc/php.d/20-ctype.ini,
 /etc/php.d/20-curl.ini,
 ...
+
+# get the phpinfo() 
+php -i
 ```
 
 * Open firewall
