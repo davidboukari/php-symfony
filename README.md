@@ -772,3 +772,28 @@ docker exec -it mysql-laboutiquefrancaise /bin/bash
 mysql -u root -p
 source ./db.sql
 ```
+
+### Form display in on blocks
+``` 
+ <div class="col-md-8">
+            {{ form(form) }}
+ </div>
+```
+
+### Form display separated fields
+```
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-12">{{ form_row(form.name) }}</div>
+        <div class="col-md-6">{{ form_row(form.firstname) }}</div>
+        <div class="col-md-6">{{ form_row(form.lastname) }}</div>
+        <div class="col-md-6">{{ form_row(form.company) }}</div>
+        <div class="col-md-6">{{ form_row(form.address) }}</div>
+        <div class="col-md-6">{{ form_row(form.postal) }}</div>
+        <div class="col-md-6">{{ form_row(form.city) }}</div>
+        <div class="col-md-6">{{ form_row(form.country) }}</div>
+        <div class="col-md-6">{{ form_row(form.phone) }}</div>
+    </div>
+    {{ form_end(form) }}
+
+```
