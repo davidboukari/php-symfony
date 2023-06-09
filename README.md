@@ -1,5 +1,19 @@
 # php-symfony
 
+
+## EX:
+```
+php -v
+sudo update-alternatives --set php /usr/bin/php7.2
+php -v
+
+
+sudo update-alternatives --config php
+
+
+sudo a2enmod php7.2
+```
+
 ![image](https://user-images.githubusercontent.com/32338685/138593403-e1dae628-cb78-4c02-b678-6149edef48c9.png)
 
 ![image](https://user-images.githubusercontent.com/32338685/138609040-63e04df3-e474-47e8-b696-a4d875b6c04e.png)
